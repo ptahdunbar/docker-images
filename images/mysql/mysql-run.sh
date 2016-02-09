@@ -17,7 +17,8 @@ echo '* Starting MySQL'
 chown -R mysql:root /var/run/mysqld/
 
 for f in ./data/dumps/*.sql; do
-    echo "$0: importing dump file $f"; "${mysql[@]}" < "$f"; echo ;;
+    echo "$0: importing dump file $f";
+    "${mysql[@]}" -f < "$f"; echo ;;
 done
 
 /entrypoint.sh mysqld --user=mysql --console
