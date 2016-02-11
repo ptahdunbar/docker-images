@@ -13,8 +13,7 @@ RUN apt-get update && \
       git \
       htop \
       curl \
-      pv \
-    rm -rf /var/lib/apt/lists/*
+      rm -rf /var/lib/apt/lists/*
 
 COPY ./mysql-run.sh /mysql-run.sh
 RUN chmod +x /mysql-run.sh
