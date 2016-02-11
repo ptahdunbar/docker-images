@@ -8,6 +8,11 @@ LABEL VERSION=1.0.0
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get -yq install \
       curl \
+      vim \
+      git \
+      htop \
+      curl \
+      pv \
       apache2 \
       libapache2-mod-php5 \
       php5-mysql \

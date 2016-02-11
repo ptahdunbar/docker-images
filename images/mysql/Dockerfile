@@ -1,6 +1,6 @@
 FROM mysql:5.7
 
-LABEL VERSION=1.0.0
+LABEL VERSION=1.3.0
 
 MAINTAINER Pirate Dunbar <yarr@piratedunbar.com>
 
